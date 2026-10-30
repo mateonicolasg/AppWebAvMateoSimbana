@@ -6,3 +6,6 @@
 bin
 Debug
 *.csproj.user
+obj/
+packages/
+*.user

@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Song.aspx" />
+    <Content Include="Content\song.css" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="PlaylistImages\default.jpg" />
@@ -74,6 +76,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\Song.cs" />
+    <Compile Include="Entities\Song.cs" />
+    <Compile Include="Song.aspx.cs">
+      <DependentUpon>Song.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Song.aspx.designer.cs">
+      <DependentUpon>Song.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BLL\User.cs" />
     <Compile Include="DAL\Song.cs" />
     <Compile Include="DAL\User.cs" />
