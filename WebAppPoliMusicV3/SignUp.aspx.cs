@@ -78,25 +78,25 @@ namespace WebAppPoliMusicV3
             }
             user.Password = EntityLayer.PoliMusicV3.Util.Hash.GeneratePasswordHash(password);
             new BLL.PoliMusicV3.User(strConnString).Save(user);
-            lblMessage.Text = "User registered successfully!. Please go to login page.";
+            lblMessage.Text = "Cuenta creada. Ya puedes iniciar sesión.";
         }
         public string UserFieldsRequiredValidations(EntityLayer.PoliMusicV3.User user)
         {
             if (user.UserName == string.Empty)
             {
-                return "Username is required!";
+                return "Escribe tu nombre de usuario.";
             }
             if (user.Email == string.Empty)
             {
-                return "Email is required!";
+                return "Escribe tu correo electrónico.";
             }
             if (user.Password == string.Empty)
             {
-                return "Password is required!";
+                return "Escribe una contraseña.";
             }
             if (!IsValidEmail(user.Email))
             {
-                return "Email is not valid!";
+                return "Escribe un correo electrónico válido.";
             }
             return string.Empty;
         }

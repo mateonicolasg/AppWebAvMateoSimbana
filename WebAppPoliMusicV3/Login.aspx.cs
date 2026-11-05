@@ -34,7 +34,7 @@ namespace WebAppPoliMusicV3
 
             if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
             {
-                lblMessage.Text = "Please, write a login/password.";
+                lblMessage.Text = "Escribe tu usuario y contraseña.";
                 return;
             }
             password = EntityLayer.PoliMusicV3.Util.Hash.GeneratePasswordHash(password);
@@ -63,13 +63,13 @@ namespace WebAppPoliMusicV3
                 }
                 else
                 {
-                    lblMessage.Text = "Login/password incorrect, try again.";
+                    lblMessage.Text = "Usuario o contraseña incorrectos. Intenta nuevamente.";
                     return;
                 }
             }
             else
             {
-                lblMessage.Text = "Login/password incorrect, try again.";
+                lblMessage.Text = "Usuario o contraseña incorrectos. Intenta nuevamente.";
                 return;
             }
             //#endif

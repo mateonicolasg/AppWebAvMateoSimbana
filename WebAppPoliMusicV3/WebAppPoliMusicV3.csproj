@@ -185,6 +185,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SignUp.aspx" />
+    <Content Include="Song.aspx" />
     <Content Include="Site.Master" />
     <Content Include="SongFiles\bensound-adventure.mp3" />
     <Content Include="UserImages\default.jpg" />
@@ -196,6 +197,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Song.aspx.cs">
+      <DependentUpon>Song.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Song.aspx.designer.cs">
+      <DependentUpon>Song.aspx</DependentUpon>
+    </Compile>
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

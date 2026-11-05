@@ -49,12 +49,12 @@ namespace BLL.PoliMusicV3
             int returnValue = CheckExistUser(user.UserName);
             if (returnValue != 0)
             {
-                return "Username already registered!";
+                return "El nombre de usuario ya está registrado.";
             }
             returnValue = CheckExistEmail(user.Email);
             if (returnValue != 0)
             {
-                return "Email already used!.";
+                return "El correo electrónico ya está registrado.";
             }
             return string.Empty;
         }
